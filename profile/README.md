@@ -19,6 +19,7 @@ trick of one language's libraries.
 <!-- PROJECTS:START -->
 <!-- The list below grows as repositories are published. -->
 - **[LedgerRAG](https://github.com/parag-labs/ledger-rag)** — verifiable RAG with a tamper-evident cryptographic ledger - every answer ships a proof (python/c#/java)
+- **[EvalForge](https://github.com/parag-labs/eval-forge)** — eval-driven ci gate for llm quality - fail the build when a prompt change regresses
 <!-- PROJECTS:END -->
 
 ## Running things
@@ -30,4 +31,5 @@ trick of one language's libraries.
 ## Contact
 
 Parag Sawant â€” [linkedin.com/in/paragsawant](https://www.linkedin.com/in/paragsawant/)
+
 
