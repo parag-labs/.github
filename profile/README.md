@@ -1,6 +1,6 @@
-﻿# parag-labs
+# parag-labs
 
-Small, focused tools for building AI systems you can actually trust in production â€”
+Small, focused tools for building AI systems you can actually trust in production -
 verifiable retrieval, agent guardrails, drift and cost monitoring, and a few CI
 gates that turn "we should really check that" into "the build fails if we don't."
 
@@ -9,7 +9,7 @@ answer for, so I wrote one. Each project is real, tested code with a README that
 explains the why. Where something is a scaffold or a deliberate shortcut, I say so
 instead of pretending it's production-grade.
 
-A lot of the cores are written three times â€” Python, C#, and Java. That's not for
+A lot of the cores are written three times - Python, C#, and Java. That's not for
 show: they're plain algorithms (a Merkle proof, a point-in-time join, a drift
 statistic), and porting them keeps me honest that the logic is the logic, not a
 trick of one language's libraries.
@@ -18,9 +18,9 @@ trick of one language's libraries.
 
 <!-- PROJECTS:START -->
 <!-- The list below grows as repositories are published. -->
-- **[LedgerRAG](https://github.com/parag-labs/ledger-rag)** — verifiable RAG with a tamper-evident cryptographic ledger - every answer ships a proof (python/c#/java)
-- **[EvalForge](https://github.com/parag-labs/eval-forge)** — eval-driven ci gate for llm quality - fail the build when a prompt change regresses
-- **[SchemaGuard](https://github.com/parag-labs/schema-guard)** — catch breaking api/schema changes at the pull request, not in production
+- **[LedgerRAG](https://github.com/parag-labs/ledger-rag)** - verifiable RAG with a tamper-evident cryptographic ledger - every answer ships a proof (python/c#/java)
+- **[EvalForge](https://github.com/parag-labs/eval-forge)** - eval-driven ci gate for llm quality - fail the build when a prompt change regresses
+- **[SchemaGuard](https://github.com/parag-labs/schema-guard)** - catch breaking api/schema changes at the pull request, not in production
 <!-- PROJECTS:END -->
 
 ## Running things
@@ -31,7 +31,7 @@ trick of one language's libraries.
 
 ## Contact
 
-Parag Sawant â€” [linkedin.com/in/paragsawant](https://www.linkedin.com/in/paragsawant/)
+Parag Sawant - [linkedin.com/in/paragsawant](https://www.linkedin.com/in/paragsawant/)
 
 
 
