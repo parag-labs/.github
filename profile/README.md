@@ -1,13 +1,15 @@
 # parag-labs
 
-Small, focused tools for building AI systems you can actually trust in production -
-verifiable retrieval, agent guardrails, drift and cost monitoring, and a few CI
-gates that turn "we should really check that" into "the build fails if we don't."
+Small, focused tools for building systems you can actually trust in production -
+verifiable retrieval, agent guardrails, drift and cost monitoring, rate limiting and
+consensus, a few CI gates that turn "we should really check that" into "the build
+fails if we don't," and the odd full-stack app or UI to tie it together.
 
 Most of these started as a problem I hit at work and couldn't find a clean, small
 answer for, so I wrote one. Each project is real, tested code with a README that
-explains the why. Where something is a scaffold or a deliberate shortcut, I say so
-instead of pretending it's production-grade.
+explains the why - and, where it earns one, an RFC on the design trade-offs and
+benchmarks with actual numbers. Where something is a scaffold or a deliberate
+shortcut, I say so instead of pretending it's production-grade.
 
 A lot of the cores are written three times - Python, C#, and Java. That's not for
 show: they're plain algorithms (a Merkle proof, a point-in-time join, a drift
