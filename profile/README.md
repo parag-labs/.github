@@ -23,7 +23,7 @@ trick of one language's libraries.
 - **[SchemaGuard](https://github.com/parag-labs/schema-guard)** - catch breaking api/schema changes at the pull request, not in production
 - **[AgentGuard](https://github.com/parag-labs/agent-guard)** - zero-trust runtime sandbox for tool-calling ai agents: least-privilege policy + signed audit log
 - **[TokenLens](https://github.com/parag-labs/token-lens)** - attribute llm cost and latency to feature/tenant/model, with budget and anomaly gates
-- **[QuotaGate](https://github.com/parag-labs/quota-gate)** - client-side rate limiter for llm apis: per-model token & request budgets across sliding windows, per tenant/user scope, reserve-then-reconcile
+- **[QuotaGate](https://github.com/parag-labs/quota-gate)** - rate limiter for llm api traffic: per-model token & request budgets across sliding windows, per tenant/user scope, reserve-then-reconcile
 <!-- PROJECTS:END -->
 
 ## Running things
