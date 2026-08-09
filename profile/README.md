@@ -33,6 +33,11 @@ trick of one language's libraries.
 More are on the way - a Raft implementation, a consistent-hash ring, a full-stack
 agent-ops dashboard, and drift/chaos/deploy tooling - published as they're ready.
 
+Also maintained, outside this org: **[flatwire](https://github.com/flatwire-io/flatwire)** -
+streaming serialization that keeps memory flat and time linear, with one identical API
+across Python, Node, .NET, Rust, Go, and Java (published to PyPI, npm, crates.io, NuGet,
+Maven Central, and Go).
+
 ## What you'll find in each repo
 
 - **A README that explains the why**, not just the how - the problem it solves and
