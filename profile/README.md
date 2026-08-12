@@ -28,6 +28,7 @@ trick of one language's libraries.
 - **[QuotaGate](https://github.com/parag-labs/quota-gate)** - rate limiter for llm api traffic: per-model token & request budgets across sliding windows, per tenant/user scope, reserve-then-reconcile (python/c#/java, design doc + benchmarks)
 - **[agent-trace](https://github.com/parag-labs/agent-trace)** - visual timeline and replay for agent runs: see where a run spent time, tokens, and money, then diff two runs ([live demo](https://parag-labs.github.io/agent-trace/))
 - **[FeatureVault](https://github.com/parag-labs/feature-vault)** - a mini feature store with point-in-time-correct joins that never leak the future
+- **[PromptShield](https://github.com/parag-labs/prompt-shield)** - firewall for llm apps: block prompt injection inbound, redact pii/secrets outbound
 <!-- PROJECTS:END -->
 
 More are on the way - a Raft implementation, a consistent-hash ring, a full-stack
