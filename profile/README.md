@@ -31,6 +31,7 @@ trick of one language's libraries.
 - **[PromptShield](https://github.com/parag-labs/prompt-shield)** - firewall for llm apps: block prompt injection inbound, redact pii/secrets outbound
 - **[DriftWatch](https://github.com/parag-labs/drift-watch)** - data-drift detection (psi + kl-divergence) for ml monitoring, in three languages
 - **[ChaosMeshLite](https://github.com/parag-labs/chaos-mesh-lite)** - resilience testing as a ci slo gate: inject faults, assert the slo still holds
+- **[DeployKit](https://github.com/parag-labs/deploy-kit)** - one command to deploy an llm app into any cloud or on-prem, secure by default
 <!-- PROJECTS:END -->
 
 More are on the way - a Raft implementation, a consistent-hash ring, a full-stack
