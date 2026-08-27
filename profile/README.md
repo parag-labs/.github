@@ -33,7 +33,7 @@ trick of one language's libraries.
 - **[DriftWatch](https://github.com/parag-labs/drift-watch)** - data-drift detection (psi + kl-divergence) for ml monitoring, in three languages
 - **[ChaosMeshLite](https://github.com/parag-labs/chaos-mesh-lite)** - resilience testing as a ci slo gate: inject faults, assert the slo still holds
 - **[DeployKit](https://github.com/parag-labs/deploy-kit)** - one command to deploy an llm app into any cloud or on-prem, secure by default
-- **[gpu-flock](https://github.com/parag-labs/gpu-flock)** - thousands of boids computed and rendered entirely on the gpu with webgpu compute shaders - zero dependencies, no build step ([live demo](https://parag-labs.github.io/gpu-flock/))
+- **[gpu-flock](https://github.com/parag-labs/gpu-flock)** - thousands of boids computed and rendered entirely on the gpu with webgpu compute shaders, with an automatic webgl2 fallback so it runs anywhere - zero dependencies, no build step ([live demo](https://parag-labs.github.io/gpu-flock/))
 <!-- PROJECTS:END -->
 
 More are on the way - a Raft implementation, a consistent-hash ring, a full-stack
