@@ -3,7 +3,8 @@
 Small, focused tools for building systems you can actually trust in production -
 verifiable retrieval, agent guardrails, drift and cost monitoring, rate limiting and
 consensus, a few CI gates that turn "we should really check that" into "the build
-fails if we don't," and the odd full-stack app or UI to tie it together.
+fails if we don't," and the odd full-stack app, UI, or GPU visualization to tie it
+together.
 
 Most of these started as a problem I hit at work and couldn't find a clean, small
 answer for, so I wrote one. Each project is real, tested code with a README that
@@ -32,6 +33,7 @@ trick of one language's libraries.
 - **[DriftWatch](https://github.com/parag-labs/drift-watch)** - data-drift detection (psi + kl-divergence) for ml monitoring, in three languages
 - **[ChaosMeshLite](https://github.com/parag-labs/chaos-mesh-lite)** - resilience testing as a ci slo gate: inject faults, assert the slo still holds
 - **[DeployKit](https://github.com/parag-labs/deploy-kit)** - one command to deploy an llm app into any cloud or on-prem, secure by default
+- **[gpu-flock](https://github.com/parag-labs/gpu-flock)** - thousands of boids computed and rendered entirely on the gpu with webgpu compute shaders - zero dependencies, no build step ([live demo](https://parag-labs.github.io/gpu-flock/))
 <!-- PROJECTS:END -->
 
 More are on the way - a Raft implementation, a consistent-hash ring, a full-stack
