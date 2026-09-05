@@ -35,6 +35,7 @@ trick of one language's libraries.
 - **[DeployKit](https://github.com/parag-labs/deploy-kit)** - one command to deploy an llm app into any cloud or on-prem, secure by default
 - **[gpu-flock](https://github.com/parag-labs/gpu-flock)** - thousands of boids computed and rendered entirely on the gpu with webgpu compute shaders, with an automatic webgl2 fallback so it runs anywhere - zero dependencies, no build step ([live demo](https://parag-labs.github.io/gpu-flock/))
 - **[MiniRaft](https://github.com/parag-labs/mini-raft)** - a small, readable raft consensus implementation - leader election + log replication with a deterministic simulator
+- **[ConsistentHash](https://github.com/parag-labs/consistent-hash)** - a consistent-hash ring with virtual nodes in three languages - minimal remap on membership change
 <!-- PROJECTS:END -->
 
 More are on the way - a Raft implementation, a consistent-hash ring, a full-stack
