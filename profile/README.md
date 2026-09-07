@@ -49,6 +49,7 @@ only read one file, read its pre-launch checklist.
 - **[agent-run-dashboard](https://github.com/parag-labs/agent-run-dashboard)** - a small full-stack dashboard (fastapi + react) for recording ai agent runs and watching cost, tokens, and failures over time
 - **[deterministic-sim-testing](https://github.com/parag-labs/deterministic-sim-testing)** - deterministic simulation testing for distributed code - replay any run from a single 64-bit seed, and shrink a failing fault schedule to a minimal reproducer (foundationdb / tigerbeetle style)
 - **[multi-raft](https://github.com/parag-labs/multi-raft)** - run thousands of independent raft consensus groups on one set of nodes - a shared scheduler instead of a thread per group, and cross-group rpc batching instead of an rpc per group
+- **[durable-execution](https://github.com/parag-labs/durable-execution)** - durable execution - workflows written as ordinary code that survive crashes by replaying an append-only history, so a completed step never runs twice (temporal style)
 <!-- PROJECTS:END -->
 
 More are on the way - a Raft implementation, a consistent-hash ring, a full-stack
