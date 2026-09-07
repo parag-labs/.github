@@ -48,6 +48,7 @@ only read one file, read its pre-launch checklist.
 - **[ConsistentHash](https://github.com/parag-labs/consistent-hash)** - a consistent-hash ring with virtual nodes in three languages - minimal remap on membership change
 - **[agent-run-dashboard](https://github.com/parag-labs/agent-run-dashboard)** - a small full-stack dashboard (fastapi + react) for recording ai agent runs and watching cost, tokens, and failures over time
 - **[deterministic-sim-testing](https://github.com/parag-labs/deterministic-sim-testing)** - deterministic simulation testing for distributed code - replay any run from a single 64-bit seed, and shrink a failing fault schedule to a minimal reproducer (foundationdb / tigerbeetle style)
+- **[multi-raft](https://github.com/parag-labs/multi-raft)** - run thousands of independent raft consensus groups on one set of nodes - a shared scheduler instead of a thread per group, and cross-group rpc batching instead of an rpc per group
 <!-- PROJECTS:END -->
 
 More are on the way - a Raft implementation, a consistent-hash ring, a full-stack
