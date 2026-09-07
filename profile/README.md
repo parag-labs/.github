@@ -44,17 +44,17 @@ only read one file, read its pre-launch checklist.
 - **[ChaosMeshLite](https://github.com/parag-labs/chaos-mesh-lite)** - resilience testing as a ci slo gate: inject faults, assert the slo still holds
 - **[DeployKit](https://github.com/parag-labs/deploy-kit)** - one command to deploy an llm app into any cloud or on-prem, secure by default
 - **[gpu-flock](https://github.com/parag-labs/gpu-flock)** - thousands of boids computed and rendered entirely on the gpu with webgpu compute shaders, with an automatic webgl2 fallback so it runs anywhere - zero dependencies, no build step ([live demo](https://parag-labs.github.io/gpu-flock/))
-- **[MiniRaft](https://github.com/parag-labs/mini-raft)** - a small, readable raft consensus implementation - leader election + log replication with a deterministic simulator
+- **[coracle](https://github.com/parag-labs/coracle)** - a small, readable raft consensus implementation - leader election + log replication with a deterministic simulator
 - **[ConsistentHash](https://github.com/parag-labs/consistent-hash)** - a consistent-hash ring with virtual nodes in three languages - minimal remap on membership change
 - **[agent-run-dashboard](https://github.com/parag-labs/agent-run-dashboard)** - a small full-stack dashboard (fastapi + react) for recording ai agent runs and watching cost, tokens, and failures over time
 - **[deterministic-sim-testing](https://github.com/parag-labs/deterministic-sim-testing)** - deterministic simulation testing for distributed code - replay any run from a single 64-bit seed, and shrink a failing fault schedule to a minimal reproducer (foundationdb / tigerbeetle style)
-- **[multi-raft](https://github.com/parag-labs/multi-raft)** - run thousands of independent raft consensus groups on one set of nodes - a shared scheduler instead of a thread per group, and cross-group rpc batching instead of an rpc per group
+- **[flotilla](https://github.com/parag-labs/flotilla)** - run thousands of independent raft consensus groups on one set of nodes - a shared scheduler instead of a thread per group, and cross-group rpc batching instead of an rpc per group
 - **[durable-execution](https://github.com/parag-labs/durable-execution)** - durable execution - workflows written as ordinary code that survive crashes by replaying an append-only history, so a completed step never runs twice (temporal style)
 <!-- PROJECTS:END -->
 
 These started as weekend attempts to really understand the systems I rely on -
-consensus (a [single Raft group](https://github.com/parag-labs/mini-raft) and the
-[multi-Raft](https://github.com/parag-labs/multi-raft) layer above it), a
+consensus (a [single Raft group](https://github.com/parag-labs/coracle) and the
+[flotilla](https://github.com/parag-labs/flotilla) layer above it), a
 [consistent-hash ring](https://github.com/parag-labs/consistent-hash),
 [deterministic simulation testing](https://github.com/parag-labs/deterministic-sim-testing),
 and [durable execution](https://github.com/parag-labs/durable-execution) - by
