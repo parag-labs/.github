@@ -17,10 +17,20 @@ show: they're plain algorithms (a Merkle proof, a point-in-time join, a drift
 statistic), and porting them keeps me honest that the logic is the logic, not a
 trick of one language's libraries.
 
+## Start here
+
+New to all this? **[llm-in-production](https://github.com/parag-labs/llm-in-production)**
+is the field guide that ties these tools together - short notes on the seven things
+that will bite an LLM feature in production (cost, evals, prompt injection, drift,
+grounding, rate limits, agent guardrails), each with the pattern that fixes it, a
+runnable example, and a link to the tool below that implements it properly. If you
+only read one file, read its pre-launch checklist.
+
 ## Projects
 
 <!-- PROJECTS:START -->
 <!-- The list below grows as repositories are published. Keep it flat: the publisher appends one bullet here per new repo. -->
+- **[llm-in-production](https://github.com/parag-labs/llm-in-production)** - field notes on shipping llm features you can trust: the seven problems that bite in production, each with a pattern, a runnable example, and the tool that fixes it - plus a pre-launch checklist
 - **[LedgerRAG](https://github.com/parag-labs/ledger-rag)** - verifiable RAG with a tamper-evident cryptographic ledger - every answer ships a proof (python/c#/java, design doc + benchmarks)
 - **[EvalForge](https://github.com/parag-labs/eval-forge)** - eval-driven ci gate for llm quality - fail the build when a prompt change regresses
 - **[SchemaGuard](https://github.com/parag-labs/schema-guard)** - catch breaking api/schema changes at the pull request, not in production
