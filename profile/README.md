@@ -52,8 +52,13 @@ only read one file, read its pre-launch checklist.
 - **[durable-execution](https://github.com/parag-labs/durable-execution)** - durable execution - workflows written as ordinary code that survive crashes by replaying an append-only history, so a completed step never runs twice (temporal style)
 <!-- PROJECTS:END -->
 
-More are on the way - a Raft implementation, a consistent-hash ring, a full-stack
-agent-ops dashboard, and drift/chaos/deploy tooling - published as they're ready.
+These started as weekend attempts to really understand the systems I rely on -
+consensus (a [single Raft group](https://github.com/parag-labs/mini-raft) and the
+[multi-Raft](https://github.com/parag-labs/multi-raft) layer above it), a
+[consistent-hash ring](https://github.com/parag-labs/consistent-hash),
+[deterministic simulation testing](https://github.com/parag-labs/deterministic-sim-testing),
+and [durable execution](https://github.com/parag-labs/durable-execution) - by
+building the smallest honest version of each. More land as I build them.
 
 Also maintained, outside this org: **[flatwire](https://github.com/flatwire-io/flatwire)** -
 streaming serialization that keeps memory flat and time linear, with one identical API
