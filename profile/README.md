@@ -138,6 +138,10 @@ Most repos follow the same shape, so the commands are predictable:
 - **Web / UI** (e.g. agent-trace): `npm ci` then `npm run dev` for the app, `npm test`
   for the suite, `npm run build` for a static bundle. Some ship a live demo on GitHub
   Pages.
+- **Go / Rust / single-language JVM & .NET services** (e.g. incident-commander,
+  infra-optimizer, durable-execution, flotilla): the usual per-toolchain commands -
+  `go test ./...` and `go run`, `cargo test` and `cargo run`, `mvn test` (JDK 17+),
+  and `dotnet test` (.NET 10).
 - **Flutter apps:** `flutter pub get`, then `flutter test` for the suite and
   `flutter run` for the app (`-d chrome` for web). Each also ships a live demo on
   GitHub Pages.
