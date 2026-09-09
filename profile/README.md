@@ -49,6 +49,7 @@ services, and runtimes for building, running, watching, and governing agents.
 - **[knowledge-workspace](https://github.com/parag-labs/knowledge-workspace)** - an evidence-grounded knowledge-graph workspace - the llm plans the query, deterministic code traverses the graph and cites its sources (graph rag with per-claim citations, typescript/next.js)
 - **[meeting-execution](https://github.com/parag-labs/meeting-execution)** - turn meeting transcripts into decisions, owners, deadlines and executed actions - the llm extracts and proposes, deterministic code validates and executes, external actions wait for approval (typescript, next.js)
 - **[mobile-assistant](https://github.com/parag-labs/mobile-assistant)** - an offline-first react native / expo ai life assistant - the ai proposes a plan, deterministic code fits it to your time window and reserves a travel buffer, with conflict-resolved sync
+- **[repo-index](https://github.com/parag-labs/repo-index)** - turn a git repo into a grounded, citable knowledge base - deterministic code-aware indexing + retrieval, the model answers only from retrieved chunks and every claim cites file:line; one engine drives a cli, a github action, and an @mention bot ([live demo](https://parag-labs.github.io/repo-index/))
 
 ### LLM production tooling & guardrails
 
