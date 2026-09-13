@@ -69,6 +69,8 @@ quotas, injection, drift, breaking changes - each solving one problem well.
 - **[DeployKit](https://github.com/parag-labs/deploy-kit)** - one command to deploy an llm app into any cloud or on-prem, secure by default
 - **[spec-decode](https://github.com/parag-labs/spec-decode)** - speculative decoding from scratch, with a numeric proof it's exact: a draft model proposes tokens, the target verifies them in one pass, and the emitted distribution provably equals sampling the target alone (python, honest speedup benchmarks)
 - **[metamorph](https://github.com/parag-labs/metamorph)** - metamorphic (property-based) testing for llms: assert the invariants a correct answer must hold under paraphrase, option-reorder, distraction, and negation, then shrink any violation to a minimal failing prompt
+- **[honest-transformer](https://github.com/parag-labs/honest-transformer)** - a tiny transformer forward pass with bit-identical logits in python, c#, and java - custom deterministic exp/tanh, explicit reduction order, and a conformance harness that diffs every 64-bit output; the arithmetic proven equal, not trusted
+- **[batch-invariant](https://github.com/parag-labs/batch-invariant)** - batch-invariant llm inference: shows the reduction-order bug that flips a decoded token depending on who else is in the batch, and a kernel that provably fixes it
 
 ### Mobile apps (Flutter)
 
