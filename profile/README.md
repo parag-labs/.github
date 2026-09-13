@@ -67,6 +67,8 @@ quotas, injection, drift, breaking changes - each solving one problem well.
 - **[FeatureVault](https://github.com/parag-labs/feature-vault)** - a mini feature store with point-in-time-correct joins that never leak the future
 - **[ChaosMeshLite](https://github.com/parag-labs/chaos-mesh-lite)** - resilience testing as a ci slo gate: inject faults, assert the slo still holds
 - **[DeployKit](https://github.com/parag-labs/deploy-kit)** - one command to deploy an llm app into any cloud or on-prem, secure by default
+- **[spec-decode](https://github.com/parag-labs/spec-decode)** - speculative decoding from scratch, with a numeric proof it's exact: a draft model proposes tokens, the target verifies them in one pass, and the emitted distribution provably equals sampling the target alone (python, honest speedup benchmarks)
+- **[metamorph](https://github.com/parag-labs/metamorph)** - metamorphic (property-based) testing for llms: assert the invariants a correct answer must hold under paraphrase, option-reorder, distraction, and negation, then shrink any violation to a minimal failing prompt
 
 ### Mobile apps (Flutter)
 
