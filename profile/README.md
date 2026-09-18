@@ -100,6 +100,7 @@ across languages to keep the logic honest.
 - **[ConsistentHash](https://github.com/parag-labs/consistent-hash)** - a consistent-hash ring with virtual nodes in three languages - minimal remap on membership change
 - **[deterministic-sim-testing](https://github.com/parag-labs/deterministic-sim-testing)** - deterministic simulation testing for distributed code - replay any run from a single 64-bit seed, and shrink a failing fault schedule to a minimal reproducer (foundationdb / tigerbeetle style)
 - **[durable-execution](https://github.com/parag-labs/durable-execution)** - durable execution - workflows written as ordinary code that survive crashes by replaying an append-only history, so a completed step never runs twice (temporal style)
+- **[FlowForge](https://github.com/parag-labs/flowforge)** - durable workflow execution engine that survives worker crashes, duplicate messages and retries; interchangeable workers in six languages
 
 ### Graphics
 
