@@ -12,10 +12,11 @@ explains the why - and, where it earns one, a design doc on the trade-offs and
 benchmarks with actual numbers. Where something is a scaffold or a deliberate
 shortcut, I say so instead of pretending it's production-grade.
 
-A lot of the cores are written three times - Python, C#, and Java. That's not for
-show: they're plain algorithms (a Merkle proof, a point-in-time join, a drift
-statistic), and porting them keeps me honest that the logic is the logic, not a
-trick of one language's libraries.
+A lot of the cores are written six times - Python, Go, Rust, C#, Java, and
+TypeScript. That's not for show: they're plain algorithms (a Merkle proof, a
+point-in-time join, a drift statistic), and porting them keeps me honest that the
+logic is the logic, not a trick of one language's libraries. Shared golden vectors
+turn "they agree" into a CI gate rather than a claim.
 
 ## Start here
 
@@ -56,11 +57,11 @@ services, and runtimes for building, running, watching, and governing agents.
 Small, drop-in libraries and CI gates for the unglamorous parts - grounding, cost,
 quotas, injection, drift, breaking changes - each solving one problem well.
 
-- **[LedgerRAG](https://github.com/parag-labs/ledger-rag)** - verifiable RAG with a tamper-evident cryptographic ledger - every answer ships a proof (python/c#/java, design doc + benchmarks)
+- **[LedgerRAG](https://github.com/parag-labs/ledger-rag)** - verifiable RAG with a tamper-evident cryptographic ledger - every answer ships a proof (six languages, design doc + benchmarks)
 - **[PromptShield](https://github.com/parag-labs/prompt-shield)** - firewall for llm apps: block prompt injection inbound, redact pii/secrets outbound
 - **[AgentGuard](https://github.com/parag-labs/agent-guard)** - zero-trust runtime sandbox for tool-calling ai agents: least-privilege policy + signed audit log
-- **[TokenLens](https://github.com/parag-labs/token-lens)** - attribute llm cost and latency to feature/tenant/model, with budget and anomaly gates (python/c#/java, design doc + benchmarks)
-- **[QuotaGate](https://github.com/parag-labs/quota-gate)** - rate limiter for llm api traffic: per-model token & request budgets across sliding windows, per tenant/user scope, reserve-then-reconcile (python/c#/java, design doc + benchmarks)
+- **[TokenLens](https://github.com/parag-labs/token-lens)** - attribute llm cost and latency to feature/tenant/model, with budget and anomaly gates (six languages, design doc + benchmarks)
+- **[QuotaGate](https://github.com/parag-labs/quota-gate)** - rate limiter for llm api traffic: per-model token & request budgets across sliding windows, per tenant/user scope, reserve-then-reconcile (six languages, design doc + benchmarks)
 - **[EvalForge](https://github.com/parag-labs/eval-forge)** - eval-driven ci gate for llm quality - fail the build when a prompt change regresses
 - **[SchemaGuard](https://github.com/parag-labs/schema-guard)** - catch breaking api/schema changes at the pull request, not in production
 - **[DriftWatch](https://github.com/parag-labs/drift-watch)** - data-drift detection (psi + kl-divergence) for ml monitoring, in three languages
@@ -69,7 +70,7 @@ quotas, injection, drift, breaking changes - each solving one problem well.
 - **[DeployKit](https://github.com/parag-labs/deploy-kit)** - one command to deploy an llm app into any cloud or on-prem, secure by default
 - **[spec-decode](https://github.com/parag-labs/spec-decode)** - speculative decoding from scratch, with a numeric proof it's exact: a draft model proposes tokens, the target verifies them in one pass, and the emitted distribution provably equals sampling the target alone (python, honest speedup benchmarks)
 - **[metamorph](https://github.com/parag-labs/metamorph)** - metamorphic (property-based) testing for llms: assert the invariants a correct answer must hold under paraphrase, option-reorder, distraction, and negation, then shrink any violation to a minimal failing prompt
-- **[honest-transformer](https://github.com/parag-labs/honest-transformer)** - a tiny transformer forward pass with bit-identical logits in python, c#, and java - custom deterministic exp/tanh, explicit reduction order, and a conformance harness that diffs every 64-bit output; the arithmetic proven equal, not trusted
+- **[honest-transformer](https://github.com/parag-labs/honest-transformer)** - a tiny transformer forward pass with bit-identical logits in six languages - custom deterministic exp/tanh, explicit reduction order, and a conformance harness that diffs every 64-bit output; the arithmetic proven equal, not trusted
 - **[batch-invariant](https://github.com/parag-labs/batch-invariant)** - batch-invariant llm inference: shows the reduction-order bug that flips a decoded token depending on who else is in the batch, and a kernel that provably fixes it
 
 ### Mobile apps (Flutter)
